@@ -4,6 +4,10 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 
+/**
+ * This extension isConnected returns true, if network is connected through wifi or cellular
+ * return 'false', if there is no internet connection
+ */
 val Context.isConnected: Boolean
     get() {
         val connectivityManager =
